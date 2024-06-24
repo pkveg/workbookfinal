@@ -1,0 +1,65 @@
+
+.front_nav{
+    display: grid;
+    grid-template-columns: 10vw 80vw 7vw;
+    height: 5em;
+    border-bottom: 1px solid grey;
+}
+
+.nav_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+main{
+    margin-top: 1em;
+}
+.main_grid{
+    display: grid;
+    grid-template-columns: 10vw 80vw ;
+}
+
+.main_nav{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main_nav > ul > li{
+    margin: 1em 0;
+}
+
+.main_content_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+.main_content_grid > li{
+    border: 1px solid grey;
+    margin: 0 5px 5px 0;
+}
+
+.main_content_grid *{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 200px;
+    height: inherit;
+}

@@ -1,0 +1,187 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    /* background-color: rebeccapurple; */
+    border-bottom: 1px solid lightslategray;
+}
+
+.header_zone{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hidden_1024{
+    display: none;
+}
+
+button{
+    background-color: inherit;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+main{
+    height: 80vh;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.main_img{
+    display: flex;
+    height: 80vh;
+    width: 100vw;
+    /* background-color: rebeccapurple; */
+}
+
+/* 
+.main_img > div{
+    width: 50vw;
+    border: 1px solid red;
+} */
+
+
+footer{
+    height: 9vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: purple; */
+    border-top: 1px solid lightslategray;
+}
+
+.footer_flex{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.svg{
+    /* background-color: red; */
+    margin: 0 10px;
+    width: 2.5vh;
+    height: inherit;
+    justify-content: center;
+    /* border: 1px solid gray;
+    border-radius: 50%; */
+}
+
+.svg_img{
+    width: 20px;
+}
+
+.margin-right{
+    margin-right: 30px;
+}
+
+.margin-right > ul *{
+    font-size: 13px;
+    color: gray;
+}
+
+.margin-left{
+    margin-left: 30px;
+}
+
+h2{
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*모달 팝업 영역 스타일링*/
+.modal {
+/*팝업 배경*/
+/* 평소에는 보이지 않도록 */
+	display: none; 
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal .modal_popup {
+/*팝업*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.modal .modal_popup .close_btn {
+    display: block;
+    padding: 10px 20px;
+    background-color: rgb(116, 0, 0);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    margin: 1em 0;
+}
+
+.log_btn{
+    display: block;
+    padding: 10px 20px;
+    background-color: rgb(116, 0, 0);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.log_btn button{
+    color: #fff;
+}
+
+#id, #pw{
+    padding: 10px;
+    margin: 5px;
+}
+
+.modal_h2{
+    font: 100;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.close_btn {
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+}
+
+.close_btn button{
+    color: #fff;
+}
+
+.modal_menu{
+    margin-top: 1em;
+    text-align: center;
+}
+
+.navbar_overlay, .navbar_burger, .navbar_menu, .navbar_burger_back{
+    display: none;
+}
+

@@ -1,0 +1,182 @@
+<!-- 2024.03.14 -->
+<!-- 융합 실습 프로젝트 초안 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- ~ 512px -->
+    <link rel="stylesheet" href="rwb_min_512.css" media="screen and (max-width: 512px)">
+
+    <!-- 512px ~ 1024px -->
+    <link rel="stylesheet" href="rwb_max_1024.css" media="screen and (min-width: 512px) and (max-width: 1024px)">
+
+
+    <link rel="stylesheet" href="imgSlide.css">
+    <title>Draft1</title>
+</head>
+
+<body>
+    <nav>
+        <header class="header_zone">
+            <div class="margin-left">
+                <h2><a href="#">LOGO</a></h2>
+            </div>
+
+            <div class="margin-right">
+                <button class="modal_btn">Login</button>
+                <span>|</span>
+                <button>Support</button>
+            </div>
+
+            <!-- <div class="hidden_1024">
+                <button>Sign In</button>
+            </div> -->
+
+            <!-- 모바일버전 햄버거 바 -->
+            <div class="navbar_overlay"></div>
+
+            <div class="navbar_burger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </div>
+
+            <div class="navbar_menu">
+                <a href="#">ABOUT</a>
+                <a href="#">WORKS</a>
+                <a href="#">NEWS</a>
+                <a href="#">SUPPORT</a>
+                <div class="navbar_burger_back">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                    </svg>
+                </div>
+            </div>
+        </header>
+    </nav>
+
+    <!-- flex 적용 부분 -->
+    <main>
+        <div class="main_img">
+
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="https://image.thehyundai.com/static/image/sect/dispbnnr16793811012020220307101531.jpg"
+                        style="width:100%">
+                    <a href="/about.html" style="position: relative;"> 
+                        <input class="slideBtn" type="button" class="text" value="ABOUT"></input>
+                    </a>
+                </div>
+
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="https://www.apparelnews.co.kr/upfiles/manage/202103/23e12afcd3071b4d06e67267bd31aa08.jpg"
+                        style="width:100%">
+                        <a href="#" style="position: relative;"> 
+                            <input class="slideBtn" type="button" class="text" value="WORK"></input>
+                        </a>    
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="https://img.danawa.com/cp_images/service/106/5041540/bad778a9.jpg" style="width:100%">
+                    <a href="#" style="position: relative;"> 
+                        <input class="slideBtn" type="button" class="text" value="NEWS"></input>
+                    </a>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <!-- <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div> -->
+
+        </div>
+
+        <!-- modal 창 -->
+        <div class="modal">
+            <div class="modal_popup">
+                <h2 class="modal_h2">로그인</h2>
+                <div>
+                    <input type="text" name="" id="id" placeholder="아이디">
+                </div>
+                <div>
+                    <input type="password" name="" id="pw" placeholder="패스워드">
+                </div>
+                <div class="log_btn">
+                    <button>로그인</button>
+                </div>
+                <div class="close_btn">
+                    <button>닫기</button>
+                </div>
+                <div class="modal_menu">
+                    <button>Sign In</button>
+                    <span>|</span>
+                    <button>Find ID&PW</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_flex">
+            <!-- LEFT -->
+            <div style="display: flex;" class="margin-left">
+                <div class="margin-right">
+                    <h2>LOGO</h2>
+                </div>
+
+                <div>
+                    <ul style="display: flex;">
+                        <li class="svg"><a href=""><img src="./img/facebook-176-svgrepo-com.svg" alt=""
+                                    class="svg_img"></a></li>
+                        <li class="svg"><a href=""><img src="./img/insta-svgrepo-com.svg" alt="" class="svg_img"></a>
+                        </li>
+                        <li class="svg"><a href=""><img
+                                    src="./img/tik-tok-brand-assets-video-socialnetwork-oneline-svgrepo-com.svg" alt=""
+                                    class="svg_img"></a></li>
+                        <li class="svg"><a href="#"><img src="./img/youtube-color-svgrepo-com.svg" alt=""
+                                    class="svg_img"></a></li>
+                        <!-- <li class="svg"><a href="">spotify</a></li> -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="margin-right footer_hidden">
+                <ul style="display: flex;">
+                    <li class="margin-right"><a href="">ACCESSIBILITY</a></li>
+                    <li>&copy;2024 LOGO. ALL Rights Reserved</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./modal.js"></script>
+    <script src="hamburger.js"></script>
+    <script src="./imgSlide.js"></script>
+</body>
+
+</html>
